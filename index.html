@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AES Encryption/Decryption</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <h1>AES Encryption/Decryption</h1>
+    <div id="encryption">
+      <h2>Encryption</h2>
+      <label for="encrypt-key">Key:</label>
+      <input type="text" id="encrypt-key" /><br />
+      <label for="encrypt-message">Message:</label>
+      <input type="text" id="encrypt-message" /><br />
+      <button onclick="encrypt()">Encrypt</button>
+      <p id="encrypted-message"></p>
+    </div>
+    <br /><br />
+    <div id="decryption">
+      <h2>Decryption</h2>
+      <label for="decrypt-key">Key:</label>
+      <input type="text" id="decrypt-key" /><br />
+      <label for="decrypt-message">Encrypted Message:</label>
+      <input type="text" id="decrypt-message" /><br />
+      <button onclick="decrypt()">Decrypt</button>
+      <p id="decrypted-message"></p>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
